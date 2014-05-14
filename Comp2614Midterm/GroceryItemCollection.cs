@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Comp2614Midterm
 {
@@ -8,7 +9,9 @@ namespace Comp2614Midterm
 		private decimal totalPrice;
 		public decimal TotalPrice 
 		{
-			get{ return totalPrice; }
+			get{
+				updateTotalPrice ();
+				return totalPrice; }
 		}
 
 
@@ -25,6 +28,15 @@ namespace Comp2614Midterm
 			}
 		}
 
+		public string FormatAllItems()
+		{
+			StringBuilder allItems = new StringBuilder (5000);
+			foreach (GroceryItem item in this)
+			{
+				allItems.Append (item.FormatForConsole ());
+			}
+			return allItems.ToString ();
+		}
 	}
 }
 

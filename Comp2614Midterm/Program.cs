@@ -11,8 +11,9 @@ namespace Comp2614Midterm
 			GroceryItemCollection inventory = new GroceryItemCollection ();
 
 			createInventory (inventory);
+			Console.WriteLine(inventory.FormatAllItems ());
 
-			Console.WriteLine ("done");
+			Console.WriteLine ("done?");
 
 		}
 

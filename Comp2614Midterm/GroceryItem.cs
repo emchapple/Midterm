@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 
 namespace Comp2614Midterm
 {
@@ -44,6 +46,19 @@ namespace Comp2614Midterm
 				return 0;
 			}
 		}
+
+		public string FormatForConsole()
+		{
+			StringBuilder itemDisplay = new StringBuilder (1000);
+
+			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, expirationDate.ToString("yy-MMM-dd ddd"));
+
+
+			return itemDisplay.ToString ();
+
+		}
+
+
 
 	}
 }

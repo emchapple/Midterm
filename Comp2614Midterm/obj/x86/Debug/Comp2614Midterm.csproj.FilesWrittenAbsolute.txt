@@ -3,3 +3,8 @@
 /Users/erin/Projects/Comp2614Midterm/Comp2614Midterm/bin/Debug/Comp2614Midterm.exe
 /Users/erin/Projects/Comp2614Midterm/Comp2614Midterm/obj/x86/Debug/Comp2614Midterm.exe
 /Users/erin/Projects/Comp2614Midterm/Comp2614Midterm/obj/x86/Debug/Comp2614Midterm.exe.mdb
+/Users/erin/Projects/Midterm/Comp2614Midterm/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/erin/Projects/Midterm/Comp2614Midterm/bin/Debug/Comp2614Midterm.exe.mdb
+/Users/erin/Projects/Midterm/Comp2614Midterm/bin/Debug/Comp2614Midterm.exe
+/Users/erin/Projects/Midterm/Comp2614Midterm/obj/x86/Debug/Comp2614Midterm.exe
+/Users/erin/Projects/Midterm/Comp2614Midterm/obj/x86/Debug/Comp2614Midterm.exe.mdb
