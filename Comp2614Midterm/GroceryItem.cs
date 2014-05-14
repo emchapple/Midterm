@@ -41,14 +41,15 @@ namespace Comp2614Midterm
 
 		}
 
+		//Sort by descending price
 		public int CompareTo(GroceryItem otherGroceryItem)
 		{
 			if (this.Price > otherGroceryItem.Price)
 			{
-				return 1;
+				return -1;
 			} else if (this.Price < otherGroceryItem.Price)
 			{
-				return -1;
+				return 1;
 			} else
 			{
 				return 0;

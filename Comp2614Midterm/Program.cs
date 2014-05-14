@@ -13,6 +13,10 @@ namespace Comp2614Midterm
 			createInventory (inventory);
 			Console.WriteLine(inventory.FormatCollection ());
 
+			Console.WriteLine ("\nSorted Order:");
+			inventory.Sort ();
+			Console.WriteLine(inventory.FormatCollection ());
+
 			Console.WriteLine ("done?");
 
 		}
