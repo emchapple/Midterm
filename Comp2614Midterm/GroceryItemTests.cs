@@ -25,6 +25,31 @@ namespace Comp2614Midterm
 			Assert.AreEqual (shouldBe, display);
 
 		}
+
+		[Test ()]
+		public void CheckNoExpiry()
+		{
+			item = new GroceryItem ("Indestructable soup", 0.99m);
+			string shouldBe = "<Never>";
+			Assert.AreEqual (shouldBe, item.DisplayExpiration ());
+
+		}
+
+
+
+		[Test ()]
+		public void CheckNormalExpiry()
+		{
+			string shouldBe = "Fri Feb 22, 2013";
+			Assert.AreEqual (shouldBe, item.DisplayExpiration ());
+		}
+
+
+
+
+
+
+
 	}
 }
 

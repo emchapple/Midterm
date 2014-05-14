@@ -11,7 +11,7 @@ namespace Comp2614Midterm
 			GroceryItemCollection inventory = new GroceryItemCollection ();
 
 			createInventory (inventory);
-			Console.WriteLine(inventory.FormatAllItems ());
+			Console.WriteLine(inventory.FormatCollection ());
 
 			Console.WriteLine ("done?");
 
@@ -22,7 +22,7 @@ namespace Comp2614Midterm
 		{
 			GroceryItem item1 = new GroceryItem ("4L Milk", 3.87m, 2013, 2, 22);
 			GroceryItem item2 = new GroceryItem ("500g Cottage Cheese", 4.28m, 2013, 2, 26);
-			GroceryItem item3 = new GroceryItem ("1 Tin Mushroom soup", 0.99m, 9999, 2, 26);
+			GroceryItem item3 = new GroceryItem ("1 Tin Mushroom Soup", 0.99m);
 			GroceryItem item4 = new GroceryItem ("15kg Dog Food", 29.99m, 2016, 12, 7);
 
 			inventory.Add (item1);

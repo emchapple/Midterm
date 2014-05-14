@@ -37,7 +37,24 @@ namespace Comp2614Midterm
 			}
 			return allItems.ToString ();
 		}
+	
+		public string FormatCollection()
+		{
+			string separator = new string('-', 60) + "\n";
+			StringBuilder collection = new StringBuilder (8000);
+			collection.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", "Grocery Item", "Price", "Expires");
+			collection.Append (separator);
+			collection.Append (FormatAllItems ());
+			collection.Append (separator);
+			collection.AppendFormat ("{0,-30}{1,5:N2}   {2}", "Total:", TotalPrice, string.Empty);
+			return collection.ToString ();
+		}
+	
+	
 	}
+
+
+
 }
 
 //Define a class named GroceryItemCollection (derived from List<GroceryItem>) in a separate source file

@@ -23,13 +23,21 @@ namespace Comp2614Midterm
 			}
 		}
 
+		public GroceryItem(string description, decimal price)
+		{
+			this.description = description;
+			this.Price = price;
+
+			expirationDate = DateTime.MaxValue;
+		}
 
 		public GroceryItem (string description, decimal price, int expirationYear , int expirationMonth, int  expirationDay)
 		{
 			this.description = description;
 			this.Price = price;
-
+			//this = new GroceryItem (description, price);
 			expirationDate = new DateTime (expirationYear, expirationMonth, expirationDay);
+
 
 		}
 
@@ -51,13 +59,23 @@ namespace Comp2614Midterm
 		{
 			StringBuilder itemDisplay = new StringBuilder (1000);
 
-			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, expirationDate.ToString("ddd MMM dd, yyyy"));
-
+			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, DisplayExpiration ());
 
 			return itemDisplay.ToString ();
 
 		}
 
+
+		public string DisplayExpiration()
+		{
+			if (expirationDate.Equals (DateTime.MaxValue))
+			{
+				return "<Never>";
+			} else
+			{
+				return expirationDate.ToString ("ddd MMM dd, yyyy");
+			}
+		}
 
 
 	}
