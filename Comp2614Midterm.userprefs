@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comp2614Midterm/Program.cs">
+    <Files>
+      <File FileName="Comp2614Midterm/Program.cs" Line="17" Column="1" />
+      <File FileName="Comp2614Midterm/GroceryItem.cs" Line="32" Column="1" />
+      <File FileName="Comp2614Midterm/GroceryItemCollection.cs" Line="15" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/erin/Projects/Comp2614Midterm/Comp2614Midterm/Program.cs" line="11" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
