@@ -6,14 +6,15 @@ namespace Comp2614Midterm
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello Midterm!");
+
 
 			GroceryItemCollection inventory = new GroceryItemCollection ();
 
 			createInventory (inventory);
+			Console.WriteLine ("Natural Order:");
 			Console.WriteLine(inventory.FormatCollection ());
 
-			Console.WriteLine ("\nSorted Order:");
+			Console.WriteLine ("\nSorted Order: [Price Descending]");
 			inventory.Sort ();
 			Console.WriteLine(inventory.FormatCollection ());
 

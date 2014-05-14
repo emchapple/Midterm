@@ -7,6 +7,8 @@ namespace Comp2614Midterm
 	public class GroceryItem : IComparable<GroceryItem>
 	{
 
+		public static string FORMAT = "{0,-32}{1,9:N2}   {2,-16}\n";
+
 		private string description;
 		public string Description 
 		{
@@ -60,7 +62,7 @@ namespace Comp2614Midterm
 		{
 			StringBuilder itemDisplay = new StringBuilder (1000);
 
-			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, DisplayExpiration ());
+			itemDisplay.AppendFormat (FORMAT, description, Price, DisplayExpiration ());
 
 			return itemDisplay.ToString ();
 
@@ -74,7 +76,7 @@ namespace Comp2614Midterm
 				return "<Never>";
 			} else
 			{
-				return expirationDate.ToString ("ddd MMM dd, yyyy");
+				return expirationDate.ToString ("ddd MMM d, yyyy");
 			}
 		}
 

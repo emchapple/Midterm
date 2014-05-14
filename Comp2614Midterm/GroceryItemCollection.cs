@@ -42,11 +42,11 @@ namespace Comp2614Midterm
 		{
 			string separator = new string('-', 60) + "\n";
 			StringBuilder collection = new StringBuilder (8000);
-			collection.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", "Grocery Item", "Price", "Expires");
+			collection.AppendFormat (GroceryItem.FORMAT, "Grocery Item", "Price", "Expires");
 			collection.Append (separator);
 			collection.Append (FormatAllItems ());
 			collection.Append (separator);
-			collection.AppendFormat ("{0,-30}{1,5:N2}   {2}", "Total:", TotalPrice, string.Empty);
+			collection.AppendFormat (GroceryItem.FORMAT, "Total:", TotalPrice, string.Empty);
 			return collection.ToString ();
 		}
 	
