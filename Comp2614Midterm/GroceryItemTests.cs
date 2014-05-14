@@ -21,7 +21,7 @@ namespace Comp2614Midterm
 		public void CheckDisplay ()
 		{
 			string display = item.FormatForConsole ();
-			string shouldBe = "4L Milk             3.87    Fri, Feb 22, 2013\n";
+			string shouldBe = "4L Milk             3.87    Fri Feb 22 2013\n";
 			Assert.AreEqual (shouldBe, display);
 
 		}

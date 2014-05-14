@@ -51,7 +51,7 @@ namespace Comp2614Midterm
 		{
 			StringBuilder itemDisplay = new StringBuilder (1000);
 
-			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, expirationDate.ToString("yy-MMM-dd ddd"));
+			itemDisplay.AppendFormat ("{0,-30}{1,5:N2}   {2}\n", description, Price, expirationDate.ToString("ddd MMM dd, yyyy"));
 
 
 			return itemDisplay.ToString ();
