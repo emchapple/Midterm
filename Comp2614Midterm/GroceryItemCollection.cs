@@ -57,8 +57,3 @@ namespace Comp2614Midterm
 
 }
 
-//Define a class named GroceryItemCollection (derived from List<GroceryItem>) in a separate source file
-//
-//Implement the following public property method in class GroceryItemCollection:
-//
-//TotalPrice (read-only)

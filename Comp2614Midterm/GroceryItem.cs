@@ -1,50 +1,49 @@
 ﻿using System;
 using System.Text;
 
-
 namespace Comp2614Midterm
 {
 	public class GroceryItem : IComparable<GroceryItem>
 	{
-
 		public static string FORMAT = "{0,-32}{1,9:N2}   {2,-16}\n";
-
 		private string description;
-		public string Description 
-		{
+
+		public string Description {
 			get{ return description; }
 		}
 
 		public decimal Price { get; set; }
 
 		private DateTime expirationDate;
-		public DateTime ExpirationDate {
-			get 
-			{
-				return expirationDate;
-			}
+
+		public DateTime ExpirationDate 
+		{
+			get {return expirationDate;}
 		}
 
-		public GroceryItem(string description, decimal price)
+		public GroceryItem (string description, decimal price)
 		{
-			this.description = description;
-			this.Price = price;
-
+			setDescriptionAndPrice (description, price);
 			expirationDate = DateTime.MaxValue;
 		}
 
-		public GroceryItem (string description, decimal price, int expirationYear , int expirationMonth, int  expirationDay)
+		public GroceryItem (string description, decimal price, int expirationYear, int expirationMonth, int  expirationDay)
 		{
-			this.description = description;
-			this.Price = price;
-			//this = new GroceryItem (description, price);
+			setDescriptionAndPrice (description, price);
 			expirationDate = new DateTime (expirationYear, expirationMonth, expirationDay);
 
 
 		}
 
+
+		private void setDescriptionAndPrice(string description, decimal price)
+		{
+			this.description = description;
+			this.Price = price;
+		}
+
 		//Sort by descending price
-		public int CompareTo(GroceryItem otherGroceryItem)
+		public int CompareTo (GroceryItem otherGroceryItem)
 		{
 			if (this.Price > otherGroceryItem.Price)
 			{
@@ -58,7 +57,7 @@ namespace Comp2614Midterm
 			}
 		}
 
-		public string FormatForConsole()
+		public string FormatForConsole ()
 		{
 			StringBuilder itemDisplay = new StringBuilder (1000);
 
@@ -68,26 +67,21 @@ namespace Comp2614Midterm
 
 		}
 
-
-		public string DisplayExpiration()
+		public string DisplayExpiration ()
 		{
 			if (expirationDate.Equals (DateTime.MaxValue))
 			{
 				return "<Never>";
-			} else
+			} 
+			else
 			{
 				return expirationDate.ToString ("ddd MMM d, yyyy");
 			}
 		}
-
-
 	}
 }
-//
-//Description (read-only) 
-//Price (read-write) 
-//ExpirationDate (read-only)
-//
-//Include the necessary code to support sorting by Price descending
-//
-//Declare class GroceryItem's ExpirationDate as a DateTime type
+
+
+
+
+

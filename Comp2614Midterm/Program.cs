@@ -18,7 +18,7 @@ namespace Comp2614Midterm
 			inventory.Sort ();
 			Console.WriteLine(inventory.FormatCollection ());
 
-			Console.WriteLine ("done?");
+
 
 		}
 
