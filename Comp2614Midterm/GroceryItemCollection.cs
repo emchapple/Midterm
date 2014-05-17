@@ -9,9 +9,11 @@ namespace Comp2614Midterm
 		private decimal totalPrice;
 		public decimal TotalPrice 
 		{
-			get{
+			get
+			{
 				updateTotalPrice ();
-				return totalPrice; }
+				return totalPrice; 
+			}
 		}
 
 
