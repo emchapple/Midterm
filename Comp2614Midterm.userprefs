@@ -1,14 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Comp2614Midterm/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comp2614Midterm/GroceryItem.cs">
     <Files>
-      <File FileName="Comp2614Midterm/Program.cs" Line="17" Column="1" />
-      <File FileName="Comp2614Midterm/GroceryItem.cs" Line="32" Column="1" />
-      <File FileName="Comp2614Midterm/GroceryItemCollection.cs" Line="15" Column="1" />
+      <File FileName="Comp2614Midterm/GroceryItem.cs" Line="11" Column="29" />
+      <File FileName="Comp2614Midterm/GroceryItemCollection.cs" Line="15" Column="24" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
